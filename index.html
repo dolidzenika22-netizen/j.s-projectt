@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>films</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <input type="text" id="searchInput" placeholder="🔍 search..." />
+    <select id="filter">
+      <option value="">📌 All movies</option>
+    </select>
+    <button id="prevPage">⬅ previous</button>
+    <button id="nextPage">➡ next</button>
+    <div id="movies"></div>
+    <div id="products">
+      <div class="product"></div>
+    </div>
+    <h2>favorite films</h2>
+    <button onclick="addFavoriteMovie('Interstellar')">add to favorites</button>
+    <ul id="favoritesList"></ul>
+    <div>
+      <h2>favorite films</h2>
+      <ul id="favoritesList"></ul>t
+      <button onclick="addFavoriteMovie('Interstellar')">
+        add to favorites
+      </button>
+      <div>
+        <button id="darkModeButton">🌙 Dark Mode</button>
+      </div>
+    </div>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
